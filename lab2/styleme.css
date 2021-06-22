@@ -19,10 +19,14 @@ body{
 }
 a{
     color: inherit;
+    text-decoration: none;
 }
 img{
     width: 33%;
 }
 .movies-list>li{
     font-family: 'Courier New', Courier, monospace;
+}
+p::first-letter{
+    font-size: 40px;
 }
