@@ -30,6 +30,7 @@ header{
 #main-section>div>aside{
     width:25%;
     float: right;
+    font-size: 13px;
 }
 #main-body{
     width:75%;
@@ -42,7 +43,7 @@ header{
     font-weight: bold;
 }
 #all-comments{
-    vertical-align: top;
+    column-count: 2;
     background-image: url("background.png");
     overflow: auto;
 }
@@ -50,9 +51,9 @@ header{
     vertical-align: middle;
 }
 .user-comment{
-    width: 48%;
-    float: left;
     padding:10px;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 .user-comment::after{
     clear: both;
