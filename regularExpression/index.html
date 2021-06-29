@@ -38,7 +38,7 @@
             <label>Another input</label>
             <input type="text" pattern="https?://.*">
             <label>Password</label>
-            <input type="password" placeholder="Password" required minlength="10" pattern="([a-z]+[A-Z]+[0-9]+)|([a-z]+[0-9]+[A-Z]+)|([A-Z]+[a-z]+[0-9]+)|([A-Z]+[0-9]+[a-z]+)|([0-9]+[a-z]+[A-Z]+)|([0-9]+[A-Z]+[a-z]+)" title="must have upper case, lower case and number">
+            <input type="password" placeholder="Password" required minlength="10" pattern="(?=.*[a-z]+)(?=.*[A-Z]+)(?=.*[0-9]+).*" title="must have upper case, lower case and number">
             <label><input type="checkbox"> Check me out</label>
             <div><input type="submit" value="Submit"></div>
         </form>
