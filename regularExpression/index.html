@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Expression</title>
+        <style>
+            form{
+                display: grid;
+                grid-row-gap: 10px;
+                margin: 10px;
+            }
+            label{
+                font-size: 30px;
+            }
+            input[type="text"],input[type="password"]{
+                font-size: 26px;
+                padding: 5px 10px;
+                border-radius: 4px;
+                border:solid 1px grey;
+            }
+            input[type="submit"]{
+                font-size: 26px;
+                padding: 10px;
+                border-radius: 4px;
+                background-color: dodgerblue;
+                border-width: 0;
+                color: white;
+            }
+            p{
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label>Email address</label>
+            <input type="text" placeholder="Enter email">
+            <p>We'll never share your email with anyone else.</p>
+            <label>Another input</label>
+            <input type="text" pattern="https?://.*">
+            <label>Password</label>
+            <input type="password" placeholder="Password" required minlength="10" pattern="([a-z]+[A-Z]+[0-9]+)|([a-z]+[0-9]+[A-Z]+)|([A-Z]+[a-z]+[0-9]+)|([A-Z]+[0-9]+[a-z]+)|([0-9]+[a-z]+[A-Z]+)|([0-9]+[A-Z]+[a-z]+)" title="must have upper case, lower case and number">
+            <label><input type="checkbox"> Check me out</label>
+            <div><input type="submit" value="Submit"></div>
+        </form>
+    </body>
+</html>
