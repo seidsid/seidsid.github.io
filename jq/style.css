@@ -20,14 +20,6 @@ body{
 .circle{
     position: absolute;
 }
-#original{
-    width:50px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: teal;
-    top:100px;
-    left: 100px;
-}
 #input-container{
     display: flex;
     justify-content: space-evenly;
