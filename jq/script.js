@@ -35,9 +35,15 @@ $(function(){
 const COLORS=["#D32F2F","#AD1457","#4A148C","#283593","#0D47A1","#01579B","#006064","#004D40","#1B5E20","#33691E","#827717","#F57F17","#FF6F00","#E65100","#BF360C","#3E2723","#212121","#263238"];
 //elelment is jquery object
 function increaseSize(element){
-    let newWidth=parseInt(element.css("width"))+element.data("growthAmount")+"px";
+    let prevWidth=parseInt(element.css("width"));
+    let newWidth=prevWidth+element.data("growthAmount")+"px";
+    let prevLeft=parseInt(element.css("left"));
+    let prevTop=parseInt(element.css("top"));
+    let posReduce=Math.round((parseInt(newWidth)-prevWidth)/2);
+    let newTop=(prevTop-posReduce)+"px";
+    let newLeft=(prevLeft-posReduce)+"px";
     let newBorderRadius=calculateBorderRadius(parseInt(newWidth))+"px";
-    element.css({'width':newWidth,'height':newWidth,'border-radius':newBorderRadius});
+    element.css({'width':newWidth,'height':newWidth,'border-radius':newBorderRadius,'left':newLeft,'top':newTop});
 }
 function calculateBorderRadius(width){
     return Math.round(width/2);
