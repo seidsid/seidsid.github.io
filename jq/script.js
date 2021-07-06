@@ -3,17 +3,8 @@ $(function(){
     const MAX_HEIGHT=parseInt($("#circle-container").css("height"));
     $("body").on("click",".circle",function(){
         let circle=$(this);
-        if(circle.data("timerId")){
-            //already animating
-            //remove it
-            clearInterval(circle.data("timerId"));
-            circle.remove();
-        }
-        else{
-            circle.data("timerId",setInterval(function(){
-                increaseSize(circle);
-            },circle.data("growthRate")));
-        }
+        clearInterval(circle.data("timerId"));
+        circle.remove();
     });
     $("#start-btn").click(function(){
         let growthAmount=$("#growth-amount-input").val();
