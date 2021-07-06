@@ -15,7 +15,6 @@ body{
     grid-template-rows: 1fr auto;
 }
 #circle-container{
-    border-bottom: solid 1px black;
     position: relative;
 }
 .circle{
@@ -33,7 +32,8 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-
+    z-index: 100;
+    border-top: solid 1px black;
 }
 input{
     font-size: 18px;
