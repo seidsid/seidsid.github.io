@@ -26,9 +26,11 @@ body{
     padding: 10px;
     z-index: 100;
     border-top: solid 1px black;
+    background-color: cornflowerblue;
 }
 input{
     font-size: 18px;
+    border-radius: 4px;
 }
 button{
     background-color: teal;

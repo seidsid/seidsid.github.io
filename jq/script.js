@@ -32,7 +32,7 @@ $(function(){
         $("#circle-container").append(element);
     });
 });
-const COLORS=["#D32F2F","#AD1457","#4A148C","#283593","#0D47A1","#01579B","#006064","#004D40","#1B5E20","#33691E","#827717","#F57F17","#FF6F00","#E65100","#BF360C","#3E2723","#212121","#263238"];
+const COLORS=["#f44336","#e81e63","#9c27b0","#673ab7","#3f51b5","#2196f3","#03a9f4","#00bcd4","#009688","#4caf50","#8bc34a","#cddc39","#ffeb3b","#ffc107","#ff9800","#ff5722","#795548","#9e9e9e","#607d8b","#D32F2F","#AD1457","#4A148C","#283593","#0D47A1","#01579B","#006064","#004D40","#1B5E20","#33691E","#827717","#F57F17","#FF6F00","#E65100","#BF360C","#3E2723","#212121","#263238"];
 //elelment is jquery object
 function increaseSize(element){
     let prevWidth=parseInt(element.css("width"));
