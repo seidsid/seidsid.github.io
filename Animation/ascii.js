@@ -6,7 +6,7 @@ let state={
 
 //this function chages the text inside the text box
 function changeText(newText){
-    document.getElementById("text-area").value=newText;
+    document.getElementById("text-area").value=newText.trim();
 }
 
 function animate(idx){
